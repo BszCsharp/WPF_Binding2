@@ -20,7 +20,9 @@
         </Grid.ColumnDefinitions>
         <TextBox x:Name="textBoxProductId" HorizontalAlignment="Left" Height="23" Margin="50,25,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Text="0"/>
         <Button x:Name="ButtonSearch" Content="suchen" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="166" Margin="34,26,-24,0"
-                Command="{Binding ButtonCommand }" CommandParameter="{Binding ElementName=textBoxProductId, Path=Text}" />
+                Command="{Binding ButtonCommand }" 
+                CommandParameter="{Binding ElementName=textBoxProductId, Path=Text}" />
+        
         <Label Content="Product-Id" HorizontalAlignment="Left" Margin="50,28,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="1.014,0.398" Width="120"/>
         <Label Content="Product-Name" HorizontalAlignment="Left" Margin="50,28,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120"/>
         <Label Content="UnitPrice" HorizontalAlignment="Left" Margin="50,27,0,0" Grid.Row="3" VerticalAlignment="Top" Width="120"/>
